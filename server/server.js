@@ -29,7 +29,6 @@ app.use(
       ? process.env.FRONTEND_URL.split(",").map((url) => url.trim())
       : "http://localhost:5173",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(express.json());
